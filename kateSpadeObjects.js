@@ -1,5 +1,3 @@
-const { verify } = require("crypto")
-
 var kateSpadeCommands = {
     kateSpadeTests: function (kateSpadeAssets) {
         this
@@ -39,19 +37,19 @@ var kateSpadeCommands = {
 
     
     this
-    .click('a[href="https://www.katespade.com/handbags/?cm_sp=junehomepage-_-spot2-cat1-handbags"]')
+    .click('a[href="https://www.katespade.com/handbags/?cm_sp=julyhomepage-_-spot2-cat1-handbags"]')
     .verify.containsText('@verifyHandbags2', "handbags")
     .click('@homeLogo')
-    .click('a[href="https://www.katespade.com/clothing/?cm_sp=junehomepage-_-spot2-cat2-clothing"]')
+    .click('a[href="https://www.katespade.com/clothing/?cm_sp=julyhomepage-_-spot2-cat2-clothing"]')
     .verify.containsText('@verifyClothing2', "clothing")
     .click('@homeLogo')
-    .click('a[href="https://www.katespade.com/shoes/?cm_sp=junehomepage-_-spot2-cat3-shoes"]')
+    .click('a[href="https://www.katespade.com/shoes/?cm_sp=julyhomepage-_-spot2-cat3-shoes"]')
     .verify.containsText('@verifyShoes2', "shoes")
     .click('@homeLogo')
-    .click('a[href="https://www.katespade.com/jewelry/view-all/?cm_sp=junehomepage-_-spot2-cat4-jewelry"]')
+    .click('a[href="https://www.katespade.com/jewelry/view-all/?cm_sp=julyhomepage-_-spot2-cat4-jewelry"]')
     .verify.containsText('@verifyJewelry2', "jewelry")
     .click('@homeLogo')
-    .click('a[href="https://www.katespade.com/wallets/?cm_sp=junehomepage-_-spot2-cat5-wallets"]')
+    .click('a[href="https://www.katespade.com/wallets/?cm_sp=julyhomepage-_-spot2-cat5-wallets"]')
     .verify.containsText('@verifyWallets2', "wallets")
 
     this
@@ -275,7 +273,7 @@ module.exports = {
         },
 
         verifyWallets2: {
-            selector: '(//span[contains(text(),"wallets")])[11]',
+            selector: '(//span[contains(text(),"wallets")])[14]',
             locateStrategy: 'xpath'
         },
 
